@@ -14,9 +14,11 @@ option("rlgraphicsapi")
 
 target("raylib")
     if is_config("os", "windows") then
-
+        set_toolchains("w64devkit")
     end
-    set_toolchains("w64devkit")
+    if is_config("os", "linux") then
+        add_cflags("-D_GLFW_X11")
+    end
     set_kind("static")
     add_includedirs("src")
     if is_config("rlplatform", "PLATFORM_DESKTOP_GLFW") then

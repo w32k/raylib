@@ -13,10 +13,10 @@ option("rlgraphicsapi")
         "GRAPHICS_API_OPENGL_ES2")
 
 target("raylib")
-    if is_config("os", "windows") then
+    if is_os("windows") then
         set_toolchains("w64devkit")
     end
-    if is_config("os", "linux") then
+    if is_os("linux") then
         add_cflags("-D_GLFW_X11")
     end
     set_kind("static")

@@ -30,7 +30,7 @@ target("raylib")
         add_links("SDL3")
     end
     if is_config("rlplatform", "PLATFORM_DRM") then
-        add_links("DRM")
+        add_links("drm")
     end
     -- TODO: implement the rest
     add_files("src/*.c")

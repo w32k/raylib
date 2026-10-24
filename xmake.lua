@@ -15,14 +15,18 @@ option("rlgraphicsapi")
 target("raylib")
     if is_os("windows") then
         set_toolchains("w64devkit")
+        add_cflags("-D_WIN32_WINNT=0x0501", {force = true})
     end
     if is_os("linux") then
-        add_cflags("-D_GLFW_X11")
+        add_cflags("-D_GLFW_X11", {force = true})
     end
     set_kind("static")
     add_includedirs("src")
     if is_config("rlplatform", "PLATFORM_DESKTOP_GLFW") then
         add_includedirs("src/external/glfw/include")
+    end
+    if is_config("rlplatform", "PLATFORM_DESKTOP_SDL") then
+        add_cflags("-DUSING_SDL3_PACKAGE", {force=true})
     end
     -- TODO: implement the rest
     add_files("src/*.c")

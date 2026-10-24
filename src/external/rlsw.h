@@ -3034,67 +3034,67 @@ static bool sw_polygon_clip(sw_vertex_t polygon[SW_MAX_CLIPPED_POLYGON_VERTICES]
 #define SW_RASTER_TRIANGLE_STATE_MASK SW_FLAGS(COLOR_INTERP, TEXTURE_2D, DEPTH_TEST, BLEND)
 
 #define SW_RASTER_TRIANGLE_STATES NONE
-#include __FILE__ // IWYU pragma: keep
+#include "rlsw.h" // IWYU pragma: keep
 #undef SW_RASTER_TRIANGLE_STATES
 
 #define SW_RASTER_TRIANGLE_STATES COLOR_INTERP
-#include __FILE__
+#include "rlsw.h"
 #undef SW_RASTER_TRIANGLE_STATES
 
 #define SW_RASTER_TRIANGLE_STATES TEXTURE_2D
-#include __FILE__
+#include "rlsw.h"
 #undef SW_RASTER_TRIANGLE_STATES
 
 #define SW_RASTER_TRIANGLE_STATES DEPTH_TEST
-#include __FILE__
+#include "rlsw.h"
 #undef SW_RASTER_TRIANGLE_STATES
 
 #define SW_RASTER_TRIANGLE_STATES BLEND
-#include __FILE__
+#include "rlsw.h"
 #undef SW_RASTER_TRIANGLE_STATES
 
 #define SW_RASTER_TRIANGLE_STATES COLOR_INTERP, TEXTURE_2D
-#include __FILE__
+#include "rlsw.h"
 #undef SW_RASTER_TRIANGLE_STATES
 
 #define SW_RASTER_TRIANGLE_STATES COLOR_INTERP, DEPTH_TEST
-#include __FILE__
+#include "rlsw.h"
 #undef SW_RASTER_TRIANGLE_STATES
 
 #define SW_RASTER_TRIANGLE_STATES COLOR_INTERP, BLEND
-#include __FILE__
+#include "rlsw.h"
 #undef SW_RASTER_TRIANGLE_STATES
 
 #define SW_RASTER_TRIANGLE_STATES TEXTURE_2D, DEPTH_TEST
-#include __FILE__
+#include "rlsw.h"
 #undef SW_RASTER_TRIANGLE_STATES
 
 #define SW_RASTER_TRIANGLE_STATES TEXTURE_2D, BLEND
-#include __FILE__
+#include "rlsw.h"
 #undef SW_RASTER_TRIANGLE_STATES
 
 #define SW_RASTER_TRIANGLE_STATES DEPTH_TEST, BLEND
-#include __FILE__
+#include "rlsw.h"
 #undef SW_RASTER_TRIANGLE_STATES
 
 #define SW_RASTER_TRIANGLE_STATES COLOR_INTERP, TEXTURE_2D, DEPTH_TEST
-#include __FILE__
+#include "rlsw.h"
 #undef SW_RASTER_TRIANGLE_STATES
 
 #define SW_RASTER_TRIANGLE_STATES COLOR_INTERP, DEPTH_TEST, BLEND
-#include __FILE__
+#include "rlsw.h"
 #undef SW_RASTER_TRIANGLE_STATES
 
 #define SW_RASTER_TRIANGLE_STATES COLOR_INTERP, TEXTURE_2D, BLEND
-#include __FILE__
+#include "rlsw.h"
 #undef SW_RASTER_TRIANGLE_STATES
 
 #define SW_RASTER_TRIANGLE_STATES TEXTURE_2D, DEPTH_TEST, BLEND
-#include __FILE__
+#include "rlsw.h"
 #undef SW_RASTER_TRIANGLE_STATES
 
 #define SW_RASTER_TRIANGLE_STATES COLOR_INTERP, TEXTURE_2D, DEPTH_TEST, BLEND
-#include __FILE__
+#include "rlsw.h"
 #undef SW_RASTER_TRIANGLE_STATES
 
 // Forward declarations for static analyzer like clangd that do not handle self-inclusion correctly
@@ -3110,67 +3110,67 @@ static const sw_raster_triangle_f SW_RASTER_TRIANGLE_TABLE[] = {
 #define SW_RASTER_QUAD_STATE_MASK SW_FLAGS(COLOR_INTERP, TEXTURE_2D, DEPTH_TEST, BLEND)
 
 #define SW_RASTER_QUAD_STATES NONE
-#include __FILE__ // IWYU pragma: keep
+#include "rlsw.h" // IWYU pragma: keep
 #undef SW_RASTER_QUAD_STATES
 
 #define SW_RASTER_QUAD_STATES COLOR_INTERP
-#include __FILE__
+#include "rlsw.h"
 #undef SW_RASTER_QUAD_STATES
 
 #define SW_RASTER_QUAD_STATES TEXTURE_2D
-#include __FILE__
+#include "rlsw.h"
 #undef SW_RASTER_QUAD_STATES
 
 #define SW_RASTER_QUAD_STATES DEPTH_TEST
-#include __FILE__
+#include "rlsw.h"
 #undef SW_RASTER_QUAD_STATES
 
 #define SW_RASTER_QUAD_STATES BLEND
-#include __FILE__
+#include "rlsw.h"
 #undef SW_RASTER_QUAD_STATES
 
 #define SW_RASTER_QUAD_STATES COLOR_INTERP, TEXTURE_2D
-#include __FILE__
+#include "rlsw.h"
 #undef SW_RASTER_QUAD_STATES
 
 #define SW_RASTER_QUAD_STATES COLOR_INTERP, DEPTH_TEST
-#include __FILE__
+#include "rlsw.h"
 #undef SW_RASTER_QUAD_STATES
 
 #define SW_RASTER_QUAD_STATES COLOR_INTERP, BLEND
-#include __FILE__
+#include "rlsw.h"
 #undef SW_RASTER_QUAD_STATES
 
 #define SW_RASTER_QUAD_STATES TEXTURE_2D, DEPTH_TEST
-#include __FILE__
+#include "rlsw.h"
 #undef SW_RASTER_QUAD_STATES
 
 #define SW_RASTER_QUAD_STATES TEXTURE_2D, BLEND
-#include __FILE__
+#include "rlsw.h"
 #undef SW_RASTER_QUAD_STATES
 
 #define SW_RASTER_QUAD_STATES DEPTH_TEST, BLEND
-#include __FILE__
+#include "rlsw.h"
 #undef SW_RASTER_QUAD_STATES
 
 #define SW_RASTER_QUAD_STATES COLOR_INTERP, TEXTURE_2D, DEPTH_TEST
-#include __FILE__
+#include "rlsw.h"
 #undef SW_RASTER_QUAD_STATES
 
 #define SW_RASTER_QUAD_STATES COLOR_INTERP, TEXTURE_2D, BLEND
-#include __FILE__
+#include "rlsw.h"
 #undef SW_RASTER_QUAD_STATES
 
 #define SW_RASTER_QUAD_STATES COLOR_INTERP, DEPTH_TEST, BLEND
-#include __FILE__
+#include "rlsw.h"
 #undef SW_RASTER_QUAD_STATES
 
 #define SW_RASTER_QUAD_STATES TEXTURE_2D, DEPTH_TEST, BLEND
-#include __FILE__
+#include "rlsw.h"
 #undef SW_RASTER_QUAD_STATES
 
 #define SW_RASTER_QUAD_STATES COLOR_INTERP, TEXTURE_2D, DEPTH_TEST, BLEND
-#include __FILE__
+#include "rlsw.h"
 #undef SW_RASTER_QUAD_STATES
 
 // Forward declarations for static analyzer like clangd that do not handle self-inclusion correctly
@@ -3186,35 +3186,35 @@ static const sw_raster_quad_f SW_RASTER_QUAD_TABLE[] = {
 #define SW_RASTER_LINE_STATE_MASK SW_FLAGS(COLOR_INTERP, DEPTH_TEST, BLEND)
 
 #define SW_RASTER_LINE_STATES NONE
-#include __FILE__ // IWYU pragma: keep
+#include "rlsw.h" // IWYU pragma: keep
 #undef SW_RASTER_LINE_STATES
 
 #define SW_RASTER_LINE_STATES COLOR_INTERP
-#include __FILE__
+#include "rlsw.h"
 #undef SW_RASTER_LINE_STATES
 
 #define SW_RASTER_LINE_STATES DEPTH_TEST
-#include __FILE__
+#include "rlsw.h"
 #undef SW_RASTER_LINE_STATES
 
 #define SW_RASTER_LINE_STATES BLEND
-#include __FILE__
+#include "rlsw.h"
 #undef SW_RASTER_LINE_STATES
 
 #define SW_RASTER_LINE_STATES COLOR_INTERP, DEPTH_TEST
-#include __FILE__
+#include "rlsw.h"
 #undef SW_RASTER_LINE_STATES
 
 #define SW_RASTER_LINE_STATES COLOR_INTERP, BLEND
-#include __FILE__
+#include "rlsw.h"
 #undef SW_RASTER_LINE_STATES
 
 #define SW_RASTER_LINE_STATES DEPTH_TEST, BLEND
-#include __FILE__
+#include "rlsw.h"
 #undef SW_RASTER_LINE_STATES
 
 #define SW_RASTER_LINE_STATES COLOR_INTERP, DEPTH_TEST, BLEND
-#include __FILE__
+#include "rlsw.h"
 #undef SW_RASTER_LINE_STATES
 
 // Forward declarations for static analyzer like clangd that do not handle self-inclusion correctly
@@ -3230,19 +3230,19 @@ static const sw_raster_line_f SW_RASTER_LINE_TABLE[] = {
 #define SW_RASTER_POINT_STATE_MASK SW_FLAGS(DEPTH_TEST, BLEND)
 
 #define SW_RASTER_POINT_STATES NONE
-#include __FILE__ // IWYU pragma: keep
+#include "rlsw.h" // IWYU pragma: keep
 #undef SW_RASTER_POINT_STATES
 
 #define SW_RASTER_POINT_STATES DEPTH_TEST
-#include __FILE__
+#include "rlsw.h"
 #undef SW_RASTER_POINT_STATES
 
 #define SW_RASTER_POINT_STATES BLEND
-#include __FILE__
+#include "rlsw.h"
 #undef SW_RASTER_POINT_STATES
 
 #define SW_RASTER_POINT_STATES DEPTH_TEST, BLEND
-#include __FILE__
+#include "rlsw.h"
 #undef SW_RASTER_POINT_STATES
 
 // Forward declarations for static analyzer like clangd that do not handle self-inclusion correctly

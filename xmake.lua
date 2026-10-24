@@ -27,6 +27,7 @@ target("raylib")
     end
     if is_config("rlplatform", "PLATFORM_DESKTOP_SDL") then
         add_cflags("-DUSING_SDL3_PACKAGE", {force=true})
+        add_links("SDL3")
     end
     -- TODO: implement the rest
     add_files("src/*.c")

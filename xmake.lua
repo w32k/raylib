@@ -36,12 +36,6 @@ target("raylib")
     add_files("src/*.c")
     add_cflags("-D$(rlgraphicsapi) -D$(rlplatform)", {force = true})
 
-target("clean")
-    set_kind("phony")
-    on_run(function()
-        os.rm(".xmake", {async = true, detach = true})
-        os.rm("build", {async = true, detach = true})
-    end)
 
 
 

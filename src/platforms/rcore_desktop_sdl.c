@@ -53,18 +53,18 @@
 #endif
 // SDL base library (window/rendered, input, timing... functionality)
 #ifdef USING_SDL3_PROJECT
-    #include <SDL3/SDL.h>
+    #include "SDL3/SDL.h"
 #elif defined(USING_SDL2_PROJECT)
-    #include <SDL2/SDL.h>
+    #include "SDL2/SDL.h"
 
     // WARNING: On Linux, this header includes Xlib.h, which defines Font
     // To prevent a conflict with raylib's own Font type, we temporarily
     // rename it to FontX11
     #define Font FontX11
-    #include <SDL2/SDL_syswm.h>    // Required to get window handlers
+    #include "SDL2/SDL_syswm.h"     // Required to get window handlers
     #undef Font
 #else
-    #include <SDL.h>
+    #include "SDL.h"
 #endif
 
 #if !defined(GRAPHICS_API_OPENGL_SOFTWARE)
@@ -74,11 +74,11 @@
   #else
       // SDL OpenGL functionality (if required, instead of internal renderer)
       #ifdef USING_SDL3_PROJECT
-          #include <SDL3/SDL_opengl.h>
+          #include "SDL3/SDL_opengl.h"
       #elif defined(USING_SDL2_PROJECT)
-          #include <SDL2/SDL_opengl.h>
+          #include "SDL2/SDL_opengl.h"
       #else
-          #include <SDL_opengl.h>
+          #include "SDL_opengl.h"
       #endif
   #endif
 #endif

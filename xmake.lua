@@ -29,6 +29,9 @@ target("raylib")
         add_cflags("-DUSING_SDL3_PACKAGE", {force=true})
         add_links("SDL3")
     end
+    if is_config("rlplatform", "PLATFORM_DRM") then
+        add_links("DRM")
+    end
     -- TODO: implement the rest
     add_files("src/*.c")
     add_cflags("-D$(rlgraphicsapi) -D$(rlplatform)", {force = true})
